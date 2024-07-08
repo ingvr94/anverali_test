@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.accordion {
+  --bs-body-bg:rgba(58,58,58,0.7);
+  --bs-body-color:white;
+  --bs-border-width:0px;
+  
+}
+
+.accordion-item{
+  margin-bottom: 14px;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button {
+  --bs-accordion-active-bg:rgb(103,232,249)
+}
+
+
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-weight: 400;    
+  font-family: 'Exo',sans-serif;    
+  background-color: black;    
+  color: white;                    
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
